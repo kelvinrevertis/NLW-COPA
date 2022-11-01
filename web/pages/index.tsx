@@ -6,7 +6,6 @@ export default function Home(props: HomeProps) {
 
   return (
     <div>
-      <h1>Teste</h1>
       <h1>Contagem: {props.count} </h1>
 
     </div>
