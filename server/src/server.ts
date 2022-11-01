@@ -6,6 +6,10 @@ async function bootstrap(){
         logger: true,
     })
 
+    fastify.get('/pools/count', () =>{
+        return { count: 8 }
+    })
+
     await fastify.listen({ port: 3333})
 
 }
