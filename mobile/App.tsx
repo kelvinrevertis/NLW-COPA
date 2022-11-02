@@ -5,12 +5,11 @@ import { NativeBaseProvider, VStack, Center, Text } from "native-base";
 export default function App() {
   return (
     <NativeBaseProvider>
-
-      <VStack flex={1} bgColor="amber.800" alignItems='center' justifyContent="center">
-        <Text>Test Texto</Text>
-        <Text style={styles.title}>Open up App.js to!</Text>
-        <StatusBar style="auto" />
-      </VStack>
+        <Center flex={1} bgColor="blueGray.900">
+          <Text color='white'>Test Texto</Text>
+          <Text style={styles.title}>Open up App.js to!</Text>
+          <StatusBar style="auto" />
+        </Center>
     </NativeBaseProvider>
   );
 }
