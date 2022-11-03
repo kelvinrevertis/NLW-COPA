@@ -2,12 +2,17 @@ interface HomeProps {
   count: number;
 }
 
+import appPreviewImg from '../assets/aplicacao-trilha-ignite.png'
+
 export default function Home(props: HomeProps) {
 
   return (
     <div>
-      <h1>Contagem: {props.count} </h1>
+      <main>
 
+      </main>
+
+      <img src={appPreviewImg} alt="Celulares preview" />
     </div>
 
   )
