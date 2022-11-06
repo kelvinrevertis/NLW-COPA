@@ -2,7 +2,7 @@ import { NativeBaseProvider, VStack, Center, Text, StatusBar } from "native-base
 import { THEME } from './src/styles/theme';
 import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold } from '@expo-google-fonts/roboto'
 
-import { Find } from './src/screens/Find';
+import { Pools } from './src/screens/Pools';
 import { Loading } from './src/components/Loading';
 import { AuthContextProvider } from "./src/contexts/AuthContext";
 
@@ -14,7 +14,7 @@ export default function App() {
     <NativeBaseProvider theme={THEME}>
       <AuthContextProvider>
       <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
-      {fontsLoaded ? <Find /> : < Loading />}
+      {fontsLoaded ? <Pools /> : < Loading />}
       </AuthContextProvider>
     </NativeBaseProvider>
   );
