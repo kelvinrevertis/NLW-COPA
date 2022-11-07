@@ -8,7 +8,9 @@ import { api } from "../services/api";
 import { Button } from "../components/Button";
 import { Header } from "../components/Header";
 import { Loading } from "../components/Loading";
+import { EmptyMyPoolList } from "../components/EmptyMyPoolList";
 import { PoolCard, PoolCardProps } from "../components/PoolCard";
+import { EmptyPoolList } from "../components/EmptyPoolList";
 
 export function Pools() {
     const [isLoading, setIsLoading] = useState(true)
@@ -61,6 +63,7 @@ export function Pools() {
             px={5}
             showsVerticalScrollIndicator={false}
             _contentContainerStyle={{pb : 10}}
+            ListEmptyComponent={() =><EmptyPoolList/>}
             />
             {/* <Loading/> */}
         </VStack>
