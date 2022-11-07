@@ -154,7 +154,7 @@ export async function poolRoutes(fastify: FastifyInstance){
                 }
             }
         })
-        return(pools)
+        return {pools}
     })
 
     fastify.get('/pools/:id',{
