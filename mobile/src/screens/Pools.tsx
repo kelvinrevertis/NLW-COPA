@@ -29,13 +29,13 @@ export function Pools() {
 
 
         } catch (error) {
-            console.log(error)
+            console.log(error);
 
             toast.show({
                 title: 'Não foi possível carregar os bolões',
                 placement: 'top',
                 bgColor: 'red.500'
-            })
+            });
 
         } finally {
             setIsLoading(false)
