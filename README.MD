@@ -19,8 +19,8 @@ Application to participate in the cup pools.
 Access in each project the "README" file to more instructions.ada projeto:
 
 - [Backend](./server/README.md)
-- [Web](./web/README.md)
-- [Mobile](./mobile/README.md)
+- [Web](./web/README.MD)
+- [Mobile](./mobile/README.MD)
 
 
 
